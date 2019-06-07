@@ -1,0 +1,46 @@
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: powderblue;
+    }
+    h1   {color: blue;}
+    p    {color: red;}
+    form {
+      background-color: green;
+    }
+    input {
+      width: 420px;
+      height: 420px;
+    }
+    .container {
+      max-width: 1000px;
+    }
+  </style>
+</head>
+
+<h1>
+  "Welcome to our LifeWeb demo!"
+</h1>
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <div style="display=inline-block">
+      <div class="container">
+        <h1>Lifeweb</h1>
+        <form role="form" method='POST' action='/'>
+          <div class="form-group">
+            <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter Story..." autofocus required>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <br>
+      </div>
+      <div name="output">
+        Output will go here
+      </div>
+    </div>
+  </body>
+</html>
